@@ -1,0 +1,22 @@
+{
+  "name": "a2a-agent-legion-ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "latest",
+    "docx": "^9.7.1",
+    "monaco-editor": "^0.56.0",
+    "three": "^0.185.1",
+    "topojson-client": "^3.1.0",
+    "vite": "latest",
+    "vue": "latest",
+    "vue-router": "^4.6.4",
+    "world-atlas": "^2.0.2"
+  }
+}

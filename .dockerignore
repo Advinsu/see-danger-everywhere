@@ -1,0 +1,10 @@
+node_modules
+dist
+.git
+.playwright-cli
+docker-data
+runtime
+output
+server
+*.log
+ScreenShot_*
