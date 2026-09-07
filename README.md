@@ -2,167 +2,167 @@
 
 # see-danger-everywhere
 
-### 群智星阵 · 悟空火眼 —— 多智能体军团协同的具身网络安全主动防御系统
+**Make threats visible. Make experts fight as one. Turn every response into reusable defense.**
 
-**让威胁被看见，让专家协同作战，让每一次处置沉淀为下一次防御能力。**
+![Vue 3](https://img.shields.io/badge/Vue_3-Command_Console-42b883?style=flat-square&logo=vuedotjs&logoColor=white)
+![Go](https://img.shields.io/badge/Go-Coordination_Service-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-Embodied_Avatar-111111?style=flat-square&logo=threedotjs&logoColor=white)
+![Neo4j](https://img.shields.io/badge/Neo4j-Security_Knowledge_Graph-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-State_Persistence-003B57?style=flat-square&logo=sqlite&logoColor=white)
 
-![Vue 3](https://img.shields.io/badge/Vue_3-可视化指挥台-42b883?style=flat-square&logo=vuedotjs&logoColor=white)
-![Go](https://img.shields.io/badge/Go-协同服务-00ADD8?style=flat-square&logo=go&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-具身数字分身-111111?style=flat-square&logo=threedotjs&logoColor=white)
-![Neo4j](https://img.shields.io/badge/Neo4j-安全知识图谱-4581C3?style=flat-square&logo=neo4j&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-状态持久化-003B57?style=flat-square&logo=sqlite&logoColor=white)
+A multi-agent collaborative active defense platform for enterprise security operations
 
-面向企业安全运营的多智能体协同主动防御平台
+**English** | [简体中文](README.zh-CN.md)
 
-[核心能力](#核心能力) · [系统架构](#系统架构) · [快速启动](#快速启动) · [部署方式](#部署方式) · [项目导航](#项目导航)
+[Core Capabilities](#core-capabilities) · [Architecture](#architecture) · [Quick Start](#quick-start) · [Deployment](#deployment) · [Project Layout](#project-layout)
 
 </div>
 
 ---
 
-## 一位军团长，一支专家军团，一条防御闭环
+## One Commander, One Legion of Specialists, One Defense Loop
 
-**悟空负责指挥，专家负责研判，工具负责执行，人类掌握关键决策。**
+**Wukong commands, specialists assess, tools execute, humans make the critical calls.**
 
-群智星阵将资产发现、专家智能体、工具资源、安全知识图谱与攻防处置汇聚到同一座指挥台。以悟空具身军团长及其 3D 数字分身为交互中心，把分散的安全动作串联成可观察、可干预、可复盘的协同流程。
+see-danger-everywhere brings asset discovery, specialist agents, tool resources, a security knowledge graph, and attack-defense response together on a single command console. With the embodied commander Wukong and its 3D digital avatar as the interaction hub, scattered security operations become an observable, interruptible, and reviewable workflow.
 
-从攻击告警亮起，到军团接管、证据关联、人工纠偏、规则审核，再到蜜罐诱捕与能力补全，平台围绕一次完整攻防事件组织操作与展示。
+From the first alert, through legion takeover, evidence correlation, human-in-the-loop correction, and rule review, to honeypot deception and capability growth, the platform organizes operation and presentation around one complete security incident.
 
 ```mermaid
 flowchart LR
-    A[资产发现] --> B[军团构建]
-    B --> C[协同研判]
-    C --> D[人工纠偏]
-    D --> E[规则审核]
-    E --> F[防御与诱捕]
-    F --> G[复盘与进化]
+    A[Asset Discovery] --> B[Legion Building]
+    B --> C[Coordinated Assessment]
+    C --> D[Human Correction]
+    D --> E[Rule Review]
+    E --> F[Defense & Deception]
+    F --> G[Review & Evolution]
     G --> B
 ```
 
-## 核心能力
+## Core Capabilities
 
-| 能力 | 在平台中完成什么 |
+| Capability | What it does on the platform |
 | --- | --- |
-| **具身指挥 · 悟空军团长** | 3D 模型、粒子聚合与在线状态展示，连接军团接入、动作发布、事件流和攻防态势。 |
-| **专家协同 · 智能体中心** | 管理专家角色与配置，组织防御、取证、溯源、情报等专业分工，展示军团处置过程。 |
-| **能力装配 · Skill 与 MCP** | 管理工具与技能资源，支持 Skill 包上传、代码工作区和 AI 编辑接口；资源目录包含 28 个安全 Skill 目录与 27 组 MCP 配置。 |
-| **知识关联 · 安全知识图谱** | Neo4j 图谱查询、文档知识入库、Cypher 控制台、关系校准与质量对照，把攻击技术、资产、证据和防御策略关联起来。 |
-| **人机协同 · 研判纠偏** | 围绕疑似事件查看请求响应、确认攻击或判定误报，并在处置流程中保留人工判断入口。 |
-| **规则闭环 · 防御策略工作区** | 展示规则分析、生成、验证、人工审核与下发流程，配合代码编辑和处置产物管理。 |
-| **主动诱捕 · 蜜罐中心** | WebSocket 交互终端、蜜罐报告、截图与命令记录上传，让诱捕过程和证据集中呈现。 |
-| **全局态势 · 数字防御大屏** | 世界攻击态势、资产与蜜罐全景、军团状态、入侵告警和防御接管动画。 |
+| **Embodied Command · Wukong Commander** | 3D model with particle-assembly and online status; connects legion onboarding, action publishing, event streams, and attack-defense posture. |
+| **Specialist Collaboration · Agent Center** | Manages specialist roles and configuration; organizes defense, forensics, attribution, and intelligence; visualizes legion response. |
+| **Capability Assembly · Skills & MCP** | Manages tools and skill resources; supports Skill package upload, a code workspace, and AI editing APIs; the resource catalog ships 28 security skill directories and 27 MCP configurations. |
+| **Knowledge Association · Security Knowledge Graph** | Neo4j graph queries, document ingestion, a Cypher console, relation calibration, and quality comparison — linking attack techniques, assets, evidence, and defense strategies. |
+| **Human-Machine Teamwork · Assessment & Correction** | Inspect requests and responses around suspicious events, confirm attacks or dismiss false positives, and keep human judgment inside the response loop. |
+| **Rule Loop · Defense Strategy Workspace** | Visualizes rule analysis, generation, validation, manual review, and deployment, with a built-in code editor and response artifacts. |
+| **Active Deception · Honeypot Center** | WebSocket interactive terminal, honeypot reports, and screenshot/command-record uploads that concentrate deception evidence. |
+| **Global Posture · Digital Defense Dashboard** | World attack map, asset and honeypot panorama, legion status, intrusion alerts, and defense-takeover animations. |
 
-### 从传统 Web 攻击，延伸到智能体安全
+### From Traditional Web Attacks to Agent Security
 
-资源体系覆盖 SQL 注入、Webshell、命令执行、ARP 欺骗、DoH 隧道、DGA 域名等场景，也纳入提示词注入、AI BOM、智能体权限审计与 A2A 链路追踪等方向。通过统一的技能包结构，将执行脚本、参数约束、输出 Schema 和结果模板集中管理。
+The resource system covers SQL injection, webshells, command execution, ARP spoofing, DoH tunneling, and DGA domains, and extends into prompt injection, AI BOM, agent permission auditing, and A2A link tracing. A unified skill-package structure manages execution scripts, parameter constraints, output schemas, and result templates in one place.
 
-> 当前仓库包含可运行的管理服务、数据持久化、图谱接入与攻防流程交互。外部 WAF、MCP Server、模型服务及实体机器人需按实际环境对接；配置目录中的工具条目不等同于已部署的外部服务。
+> This repository currently provides the overall engineering structure and root-level configuration files. Directories such as `src/` and `server/` are structural placeholders; the full source code is maintained in an internal repository.
 
-## 五阶段攻防主线
+## Five-Phase Attack-Defense Workflow
 
-| 阶段 | 主题 | 关键操作 |
+| Phase | Theme | Key Operations |
 | --- | --- | --- |
-| **01 · 看清战场** | 事件复盘与资产测绘 | 接入军团长，梳理网络资产与 AI 资产，建立场景上下文。 |
-| **02 · 组建军团** | 专家构建与知识赋能 | 配置专家、绑定技能与工具、关联知识库，完成图谱校准。 |
-| **03 · 正面对抗** | 攻击发现与人工纠偏 | 观察攻击事件与军团响应，检查疑似流量，确认攻击或否决误报。 |
-| **04 · 更新防线** | 规则生成与可信执行 | 查看规则产物、验证结果与审核流程，完成策略下发交互。 |
-| **05 · 越战越强** | 二轮防御、诱捕与进化 | 展示更新后的防御过程，汇集蜜罐证据，复盘能力盲区。 |
+| **01 · See the battlefield** | Incident review & asset mapping | Onboard the commander, map network and AI assets, and establish scenario context. |
+| **02 · Build the legion** | Specialist building & knowledge empowerment | Configure specialists, bind skills and tools, link knowledge bases, and calibrate the graph. |
+| **03 · Head-on confrontation** | Attack detection & human correction | Watch attack events and legion response, inspect suspicious traffic, confirm attacks or veto false positives. |
+| **04 · Update the defense line** | Rule generation & trusted execution | Review rule artifacts, validation results, and the approval workflow; complete policy deployment. |
+| **05 · Grow stronger** | Second-round defense, deception & evolution | Visualize the updated defense, gather honeypot evidence, and review capability blind spots. |
 
-详细操作见 [平台阶段操作流程说明](平台阶段操作流程说明.md)。
+See the [Phase Operations Guide (Chinese)](平台阶段操作流程说明.md) for detailed steps.
 
-## 系统架构
+## Architecture
 
 ```mermaid
 flowchart TB
-    User[操作人员 / 悟空接入端]
-    subgraph Frontend[Vue 3 可视化指挥台]
-        UI[军团编排 · 智能体中心 · 规则工作区]
-        View[Three.js 数字分身 · 防御大屏]
-        Editor[Monaco 代码编辑器]
+    User[Operator / Wukong Endpoint]
+    subgraph Frontend[Vue 3 Command Console]
+        UI[Legion Orchestration · Agent Center · Rule Workspace]
+        View[Three.js Digital Avatar · Defense Dashboard]
+        Editor[Monaco Code Editor]
     end
-    subgraph Backend[Go HTTP 服务 · :8088]
-        API[接入认证 · 智能体与资源管理]
-        Events[悟空动作与 SSE 事件流]
-        Terminal[蜜罐 WebSocket 终端]
-        Knowledge[知识图谱接口]
+    subgraph Backend[Go HTTP Service · :8088]
+        API[Access Auth · Agent & Resource Management]
+        Events[Wukong Actions & SSE Event Stream]
+        Terminal[Honeypot WebSocket Terminal]
+        Knowledge[Knowledge Graph API]
     end
     User --> Frontend
     Frontend -->|HTTP / SSE / WebSocket| Backend
-    API --> SQLite[(SQLite 状态与资源)]
-    Knowledge --> Neo4j[(Neo4j 安全知识图谱)]
-    Terminal --> Host[本地或 SSH 蜜罐执行环境]
-    API -. 按环境配置 .-> External[模型服务 / 外部工具]
+    API --> SQLite[(SQLite State & Resources)]
+    Knowledge --> Neo4j[(Neo4j Security Knowledge Graph)]
+    Terminal --> Host[Local or SSH Honeypot Runtime]
+    API -. Per-environment config .-> External[Model Services / External Tools]
 ```
 
-| 层次 | 技术与职责 |
+| Layer | Technology & Responsibilities |
 | --- | --- |
-| 前端 | Vue 3、Vue Router、Vite；Three.js 呈现三维场景，Monaco 提供代码编辑，docx 支持报告产物。 |
-| 后端 | Go 标准库 HTTP 路由，承载接入、资源管理、军团事件与蜜罐服务。 |
-| 数据 | SQLite 保存智能体、资源与运行状态；Neo4j 保存和查询安全知识关系。 |
-| 通信 | HTTP API、悟空 SSE 事件流、蜜罐 WebSocket 终端。 |
-| 部署 | 宿主机运行 Go 服务；Docker Compose 管理 Neo4j 与 Nginx。 |
+| Frontend | Vue 3, Vue Router, Vite; Three.js for 3D scenes, Monaco for code editing, docx for report artifacts. |
+| Backend | Go standard-library HTTP routing for access, resource management, legion events, and honeypot services. |
+| Data | SQLite persists agents, resources, and runtime state; Neo4j stores and queries security knowledge relations. |
+| Communication | HTTP API, Wukong SSE event stream, and honeypot WebSocket terminal. |
+| Deployment | Go service on the host; Neo4j and Nginx via Docker Compose. |
 
-## 快速启动
+## Quick Start
 
-> **仓库说明**：本公开仓库当前提供工程整体结构与根目录配置文件；`src/`、`server/` 等业务目录为结构占位，完整源码在内部仓库维护。
+> **Repository note**: this public repository currently provides the engineering structure and root-level configuration files. Business directories such as `src/` and `server/` are structural placeholders; the full source code is maintained in an internal repository.
 
-准备 Node.js 20.19+（20.x）或 22.12+、npm，以及 Go 1.25 或更新版本。以下命令以 PowerShell 为例，前后端分别占用一个终端。
+You need Node.js 20.19+ (20.x) or 22.12+, npm, and Go 1.25 or newer. The following commands use PowerShell as an example; the frontend and backend each occupy one terminal.
 
-### 1. 获取项目
+### 1. Get the project
 
 ```powershell
 git clone https://github.com/Advinsu/see-danger-everywhere.git
 cd see-danger-everywhere
 ```
 
-### 2. 启动后端
+### 2. Start the backend
 
 ```powershell
 cd server
 Copy-Item .env.example .env
 
-# 首次体验可使用 mock 图谱，无需先安装 Neo4j。
+# For a first look, use the mock graph — no Neo4j required.
 $env:KNOWLEDGE_MODE = "mock"
 $env:HONEYPOT_TERMINAL_ENABLED = "false"
 go run ./cmd/api
 ```
 
-服务默认监听 `http://localhost:8088`，健康检查地址为 `http://localhost:8088/healthz`。SQLite 默认启用，首次启动会初始化数据。
+The service listens on `http://localhost:8088` by default; the health check lives at `http://localhost:8088/healthz`. SQLite is enabled by default and initializes its data on first start.
 
-已有 `.env` 时直接编辑并保留现有配置，无需重复复制。接入真实图谱和蜜罐终端时，分别调整 `KNOWLEDGE_MODE`、Neo4j 连接参数与蜜罐执行配置。
+If `.env` already exists, edit and keep the current configuration instead of copying again. To connect a real graph and the honeypot terminal, adjust `KNOWLEDGE_MODE`, the Neo4j connection parameters, and the honeypot execution settings.
 
-### 3. 启动前端
+### 3. Start the frontend
 
-在项目根目录打开另一个终端：
+Open another terminal in the project root:
 
 ```powershell
 npm ci
 npm run dev
 ```
 
-打开 **http://localhost:5188**。开发服务器会将 `/api` 请求代理到 `localhost:8088`。
+Open **http://localhost:5188**. The dev server proxies `/api` requests to `localhost:8088`.
 
-示例配置的初始登录账号为 `admin`，密码为 `admin123`；可通过 `server/.env` 中的 `A2A_ADMIN_USERNAME` 和 `A2A_ADMIN_PASSWORD` 修改。
+The sample configuration ships an initial account `admin` with password `admin123`; change it via `A2A_ADMIN_USERNAME` and `A2A_ADMIN_PASSWORD` in `server/.env`.
 
-### 4. 按主线体验
+### 4. Explore the workflow
 
-登录后进入阶段页面，完成军团接入与专家配置，再进入研判、规则审核和复盘流程。`/help` 页面提供接入接口、攻防流程触发方式及蜜罐证据上传说明。
+After signing in, enter the phase pages, complete legion onboarding and specialist configuration, then move on to assessment, rule review, and post-incident review. The `/help` page documents access APIs, workflow triggers, and honeypot evidence upload.
 
-| 页面 | 路径 |
+| Page | Path |
 | --- | --- |
-| 资产发现 | `/discovery` |
-| 五阶段攻防流程 | `/phase/1` 至 `/phase/5` |
-| 智能体中心 | `/agents` |
-| 数字防御大屏 | `/dashboard` |
-| 蜜罐中心 | `/honeypot` |
-| 模型管理 / 平台设置 | `/models` / `/setting` |
-| 接入与操作帮助 | `/help` |
+| Asset discovery | `/discovery` |
+| Five-phase workflow | `/phase/1` to `/phase/5` |
+| Agent center | `/agents` |
+| Digital defense dashboard | `/dashboard` |
+| Honeypot center | `/honeypot` |
+| Models / settings | `/models` / `/setting` |
+| Access & operation help | `/help` |
 
-## 部署方式
+## Deployment
 
-仓库采用 **Go 服务运行于宿主机，Neo4j 与 Nginx 运行于容器** 的部署方式。Compose 中的 Nginx 读取根目录 `dist/`，并将 API 请求转发到宿主机 `8088` 端口。
+The repository deploys with the **Go service on the host and Neo4j plus Nginx in containers**. Nginx in Compose serves the root `dist/` directory and forwards API requests to host port `8088`.
 
-在项目根目录准备前端产物并启动基础服务：
+Prepare the frontend assets in the project root and start the base services:
 
 ```powershell
 npm ci
@@ -170,55 +170,53 @@ npm run build
 docker compose up -d
 ```
 
-随后在 `server/.env` 中设置 `KNOWLEDGE_MODE=neo4j`，使 `NEO4J_PASSWORD` 与 Compose 使用的密码一致，再从 `server/` 启动 Go 服务。Compose 默认 Neo4j 密码与 `.env.example` 的示例值不同，接入前需统一；如果此前在终端设置过 `KNOWLEDGE_MODE=mock`，也需移除或改为 `neo4j`，因为环境变量优先于 `.env`。
+Then set `KNOWLEDGE_MODE=neo4j` in `server/.env`, make sure `NEO4J_PASSWORD` matches the password used by Compose, and start the Go service from `server/`. If you previously set `KNOWLEDGE_MODE=mock` in a terminal, remove it or switch it to `neo4j` — environment variables take precedence over `.env`.
 
-| 服务 | 默认入口 |
+| Service | Default entry |
 | --- | --- |
-| Nginx 前端 | `http://localhost:5188` |
-| Go 后端 | `http://localhost:8088` |
+| Nginx frontend | `http://localhost:5188` |
+| Go backend | `http://localhost:8088` |
 | Neo4j Browser | `http://localhost:7474` |
 | Neo4j Bolt | `bolt://localhost:7687` |
 
-开发服务器与 Nginx 默认使用同一个前端端口，切换部署模式前需停止 `npm run dev`。`docker compose up -d` 仅启动 Neo4j 和 Nginx，Go 服务需单独运行。
+The dev server and Nginx share the same frontend port; stop `npm run dev` before switching to deployment mode. `docker compose up -d` starts only Neo4j and Nginx — the Go service runs separately.
 
-Windows 环境可用 `build-linux-package.bat amd64` 或 `build-linux-package.bat arm64` 生成对应架构的 Linux 后端二进制；该脚本只构建后端，前端资源和环境配置需分别准备。
-
-## 项目导航
+## Project Layout
 
 ```text
 see-danger-everywhere/
-├── src/                       # Vue 指挥台、攻防流程页面与交互组件
-│   ├── components/            # 3D 悟空、大屏、图谱、规则、蜜罐
-│   ├── features/              # 研判产物、模型配置与平台设置
-│   ├── views/                 # 页面入口
-│   └── router/                # 路由定义
-├── public/                    # 公共图片与机器人模型
+├── src/                       # Vue command console, workflow pages, interactive components
+│   ├── components/            # 3D Wukong, dashboard, graph, rules, honeypot
+│   ├── features/              # Assessment artifacts, model config, platform settings
+│   ├── views/                 # Page entries
+│   └── router/                # Route definitions
+├── public/                    # Public assets and robot models
 ├── server/
-│   ├── cmd/api/               # Go 服务入口
-│   ├── internal/httpapi/      # HTTP、SSE 与 WebSocket 接口
-│   ├── internal/service/      # 悟空、接入与蜜罐业务
-│   ├── internal/knowledge/    # Neo4j 与 mock 图谱实现
-│   ├── internal/storage/      # SQLite 与资源初始化
-│   └── .env.example           # 环境配置样例
-├── skills/                    # 安全技能定义、脚本与 Schema
-├── resource/                  # MCP 配置、技能交付包与知识材料
-├── runtime/                   # 本地证据、抓包、报告与上传目录
+│   ├── cmd/api/               # Go service entry
+│   ├── internal/httpapi/      # HTTP, SSE, and WebSocket APIs
+│   ├── internal/service/      # Wukong, access, and honeypot services
+│   ├── internal/knowledge/    # Neo4j and mock graph implementations
+│   ├── internal/storage/      # SQLite and resource initialization
+│   └── .env.example           # Environment configuration sample
+├── skills/                    # Security skill definitions, scripts, and schemas
+├── resource/                  # MCP configs, skill packages, knowledge materials
+├── runtime/                   # Local evidence, captures, reports, and uploads
 ├── docker-compose.yml         # Neo4j + Nginx
-└── nginx.conf                 # 静态资源与 API 代理
+└── nginx.conf                 # Static assets and API proxy
 ```
 
-| 继续阅读 | 内容 |
+| Further reading | Content |
 | --- | --- |
-| [阶段操作说明](平台阶段操作流程说明.md) | 五阶段流程的具体操作与衔接。 |
-| [后端说明](server/README.md) | 接入服务与知识图谱接口（随源码发布）。 |
-| [资源交付说明](resource/README.md) | Skill、MCP、知识文档与 Cypher 使用方式（随源码发布）。 |
+| [Phase Operations Guide](平台阶段操作流程说明.md) | Detailed operations and handoffs of the five phases (Chinese). |
+| [Backend Guide](server/README.md) | Access service and knowledge graph APIs (shipped with source). |
+| [Resource Delivery Guide](resource/README.md) | Skills, MCP, knowledge documents, and Cypher usage (shipped with source). |
 
 ---
 
 <div align="center">
 
-**群智成阵，火眼识威。**
+**See danger, everywhere.**
 
-从看见一次攻击，到组织一场协同防御。
+From seeing one attack to orchestrating a coordinated defense.
 
 </div>
